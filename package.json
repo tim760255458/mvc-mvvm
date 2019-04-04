@@ -4,7 +4,8 @@
     "description": "Hello Koa 2 example with async",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "start-mvvm": "node app-mvvm.js"
     },
     "keywords": [
         "koa",

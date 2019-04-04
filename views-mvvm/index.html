@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block main %}
+<h1>Index</h1>
+<p>message: {[ message ]}</p>
+<button
+  class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-color-indigo-600"
+  @click="updateMessage">更新message</button>
+<div class="mdui-divider mdui-m-t-2"></div>
+<form action="/signin" method="post">
+  <p>Name: <input name="name" v-model="name" /></p>
+  <p>Password: <input v-model="password" name="password" type="password" /></p>
+  <p><input type="submit" value="Submit" /></p>
+</form>
+<p>双向数据绑定的例子</p>
+<p>Name: {[ name ]}</p>
+<p>Password: {[ password ]}</p>
+{% endblock %}
